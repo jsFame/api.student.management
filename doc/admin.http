@@ -1,0 +1,17 @@
+### Create
+
+POST {{u}}/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "fullName": "John Doe",
+  "date_of_birth": "1990-01-01",
+  "gender": "M",
+  "email": "john@example.com",
+  "role": "ADMIN",
+  "username": "johndoe",
+  "password": "secretpassword"
+}
+

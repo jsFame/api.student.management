@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema({
   },
   gender: {
     type: String,
-    enum: ['NAM', 'NỮ'],
+    enum: ['M', 'F'],
   },
   email: {
     type: String,

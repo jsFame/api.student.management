@@ -17,16 +17,18 @@ module.exports = {
   },
   //========================================================= CREATE USERS ======================================================//
   post: async (req, res) => {
+    const {firstName, lastName, date_of_birth, gender, email, role, username, password} = req.body
+
     let user = new UserModel({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      fullName: req.body.lastName + ' ' + req.body.firstName,
-      date_of_birth: req.body.date_of_birth,
-      gender: req.body.gender,
-      email: req.body.email,
-      role: req.body.role,
-      username: req.body.username,
-      password: req.body.password && sha256(req.body.password),
+      firstName,
+      lastName,
+      fullName: `{firstName} {lastName}`,
+      date_of_birth,
+      gender,
+      email,
+      role,
+      username,
+      password,
     })
     try {
       await user.save()

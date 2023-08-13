@@ -1,0 +1,43 @@
+### Users
+GET {{u}}/users
+
+### Users: Create
+POST {{u}}/users
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "fullName": "John Doe",
+  "date_of_birth": "1990-01-01",
+  "gender": "M",
+  "email": "john@example.com",
+  "role": "ADMIN",
+  "username": "johndoe",
+  "password": "secretpassword"
+}
+
+### Signin
+POST {{u}}/auth/signin
+Content-Type: application/json
+
+{
+"clientToken":"{{clientToken}}",
+  "sessionId": "{{sessionId}}"
+}
+
+### Me
+GET {{u}}/users/me
+
+####  update my profile
+#PATCH {{u}}/users
+#Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiaGlyb0BnbWFpbC5jb20iLCJpYXQiOjE2ODg5Njk3NzQsImV4cCI6MTY4ODk3MzM3NH0.wiYwslhhjB9hZBeTnmArTXybNmVhr4IEtaPp7Bs2A5Q
+#
+#{
+#  "firstName": "Tadashi",
+#  "lastName": "Hamada"
+#}
+#
+#### Users: Delete
+#DELETE {{u}}/users
