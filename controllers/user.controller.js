@@ -22,7 +22,7 @@ module.exports = {
     let user = new UserModel({
       firstName,
       lastName,
-      fullName: `{firstName} {lastName}`,
+      fullName: `${firstName} ${lastName}`,
       date_of_birth,
       gender,
       email,
