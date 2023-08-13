@@ -1,8 +1,8 @@
-const express = require('express');
+const express = require('express')
 
-const controller = require('../controllers/student.controller');
+const controller = require('../controllers/student.controller')
 
-const router = express.Router();
+const router = express.Router()
 
 router.get('/', controller.get)
 router.post('/:id', controller.post)
@@ -13,4 +13,4 @@ router.post('/', controller.postUserAndStudent)
 // STUDENT VIEW
 router.get('/:id/view', controller.studentView)
 
-module.exports = router;
+module.exports = router

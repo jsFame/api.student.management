@@ -32,7 +32,8 @@
     "sha256": "^0.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "^3.0.1"
   },
   "nodemonConfig": {
     "ignore": [
