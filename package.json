@@ -1,7 +1,8 @@
 {
-  "name": "tctvlsn",
+  "name": "api.student.management",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "API Server for student management",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zennomi/tct-vlsn.git"
+    "url": "git+https://github.com/jsFame/api.student.management.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zennomi/tct-vlsn/issues"
+    "url": "https://github.com/jsFame/api.student.management/issues"
   },
-  "homepage": "https://github.com/zennomi/tct-vlsn#readme",
+  "homepage": "https://github.com/jsFame/api.student.management#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
