@@ -6,7 +6,6 @@ Content-Type: application/json
 {
   "firstName": "John",
   "lastName": "Doe",
-  "fullName": "John Doe",
   "date_of_birth": "1990-01-01",
   "gender": "M",
   "email": "john@example.com",
@@ -14,4 +13,16 @@ Content-Type: application/json
   "username": "johndoe",
   "password": "secretpassword"
 }
+
+> {%
+    res = response.body
+
+    client.global.set("adminId", res._id)
+    client.global.set("admin", res)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 201, "admin created")
+    })
+%}
 

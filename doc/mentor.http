@@ -6,7 +6,6 @@ Content-Type: application/json
 {
   "firstName": "Mentor",
   "lastName": "User",
-  "fullName": "Mentor User",
   "date_of_birth": "1988-02-10",
   "gender": "M",
   "email": "mentor@example.com",
@@ -14,3 +13,16 @@ Content-Type: application/json
   "username": "mentoruser",
   "password": "mentorpassword"
 }
+
+> {%
+    res = response.body
+
+    client.global.set("mentorId", res._id)
+    client.global.set("mentor", res)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 201, "mentor created")
+    })
+%}
+

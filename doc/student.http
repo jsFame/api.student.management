@@ -4,14 +4,26 @@ POST {{u}}/users
 Content-Type: application/json
 
 {
-  "firstName": "Student",
-  "lastName": "User",
-  "fullName": "Student User",
+  "firstName": "Hiro",
+  "lastName": "Hamada",
   "date_of_birth": "2000-03-20",
   "gender": "F",
-  "email": "student@example.com",
+  "email": "hiro@example.com",
   "role": "STUDENT",
-  "username": "studentuser",
-  "password": "studentpassword"
+  "username": "hiro132",
+  "password": "hiro@123"
 }
+
+> {%
+    res = response.body
+
+    client.global.set("studentId", res._id)
+    client.global.set("student", res)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 201, "student created")
+    })
+%}
+
 
