@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/jsFame/api.student.management.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Hiro <laciferin@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsFame/api.student.management/issues"
   },
