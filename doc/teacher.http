@@ -4,7 +4,7 @@ POST {{u}}/users
 Content-Type: application/json
 
 {
-  "firstName": "Teacher",
+  "firstName": "Teacher1",
   "lastName": "User",
   "fullName": "Teacher User",
   "date_of_birth": "1990-08-25",
@@ -16,4 +16,4 @@ Content-Type: application/json
 }
 
 
-#
+
