@@ -2,8 +2,10 @@
   "name": "api.student.management",
   "private": true,
   "version": "1.0.0",
-  "description": "API Server for student management",
+  "description": "API Server of attendance.nas- a attendance tracker for employees and students",
+  "author": "Hiro <laciferin@gmail.com>",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
@@ -13,8 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/jsFame/api.student.management.git"
   },
-  "author": "Hiro <laciferin@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsFame/api.student.management/issues"
   },
@@ -40,5 +40,10 @@
       "view/*",
       "public/*"
     ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=6.0.0",
+    "pnpm": ">=8.6.6"
   }
 }
