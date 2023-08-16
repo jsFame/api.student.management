@@ -1,4 +1,4 @@
-### Create
+### Create User with role of Teacher
 
 POST {{u}}/users
 Content-Type: application/json
@@ -19,13 +19,38 @@ Content-Type: application/json
     const {user} = res
     client.log(JSON.stringify(user))
 
+    client.global.set("teacherUserId", user._id)
+    client.global.set("teacherUser", user)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 200, "teacher user created")
+    })
+%}
+
+### Add User to Teachers
+
+POST http://localhost:1606/teachers/{{teacherUserId}}
+Content-Type: application/json
+
+{
+  "exp": 5,
+  "subjectName": "MATH"
+}
+
+> {%
+    res = response.body
+    const user = res
+
     client.global.set("teacherId", user._id)
     client.global.set("teacher", user)
 
 
     client.test("res", () => {
-        client.assert(response.status == 200, "teacher created")
+        client.assert(response.status == 200, "teacher user created")
     })
 %}
+
+###
 
 
