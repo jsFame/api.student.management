@@ -61,7 +61,7 @@ module.exports = {
       if (student.userId) student.userId.password = undefined
     }
     var currentDate = new Date(
-      new Date().toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }),
+        new Date().toLocaleString('en-US', {timeZone: 'Asia/Kolkata'}),
     )
     var weekday = new Array(7)
     weekday[0] = 8
