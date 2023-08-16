@@ -82,7 +82,7 @@ app.use('/classes', classRoute)
 app.use('/students', studentRoute)
 app.use('/teachers', teacherRoute)
 app.use('/mentors', mentorRoute)
-app.use('/attends', attendanceRoute)
+app.use('/attendances', attendanceRoute)
 app.use('/records', recordRoute)
 
 

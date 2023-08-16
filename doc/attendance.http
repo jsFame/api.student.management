@@ -1,0 +1,12 @@
+### Create Attendance Record for a student
+
+POST {{u}}/attendances/{{classId}}/{{studentId}}
+Content-Type: application/json
+#  "time": "2023-07-01T09:00:00Z", omited for a reason, i like it when it works like punchin. That way teachers are honest, attendance records are accurate
+
+
+### Get attendance details for a student:
+
+GET {{u}}/attendances/{{studentId}}
+
+### TODO: DELETE by attendanceId doc

@@ -207,7 +207,7 @@ module.exports = {
     } catch (err) {
       res.status(201).json({ error: err })
     }
-    res.json('Successfully')
+    res.json({message: 'success', studentId: req.params.studentId})
   },
   //========================================================= DELETE ATTENDANCE RECORD (EDIT TO ABSENCE) ===================================================//
   delete: async (req, res) => {

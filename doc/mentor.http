@@ -60,7 +60,7 @@ Content-Type: application/json
 }
 
 #### DELETE
-#DELETE http://localhost:1606/mentors/{{mentorId}}
+#DELETE {{u}}/mentors/{{mentorId}}
 #FIXME: server stalling when mentorId not found ; fixit like in teacher
 
 
