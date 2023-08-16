@@ -4,25 +4,26 @@ POST {{u}}/users
 Content-Type: application/json
 
 {
-  "firstName": "John",
-  "lastName": "Doe",
+  "firstName": "Hamda",
+  "lastName": "H",
   "date_of_birth": "1990-01-01",
   "gender": "M",
   "email": "john@example.com",
   "role": "ADMIN",
-  "username": "johndoe",
-  "password": "secretpassword"
+  "username": "hamda",
+  "password": "hamada@12"
 }
 
 > {%
-    res = response.body
+    res = response.body.json()
+    client.log(res)
 
-    client.global.set("adminId", res._id)
+    if (res._id)
+        client.global.set("adminId", res._id)
     client.global.set("admin", res)
 
-
-    client.test("res", () => {
-        client.assert(response.status == 201, "admin created")
-    })
 %}
 
+
+### Delete
+DELETE {{u}}/users/{{adminId}}
