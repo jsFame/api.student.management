@@ -252,6 +252,7 @@ module.exports = {
       // 1 STUDENT ID
       try {
         student = await StudentModel.findById(req.body.studentId)
+          console.log({student})
         if (!student) throw 'Student Not Found'
         if (student.listClass.indexOf(req.params.id) == -1) {
           student.listClass.push(req.params.id)

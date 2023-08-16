@@ -45,12 +45,11 @@ Content-Type: application/json
 
 ### Add: Student
 
-PUT {{u}}/classes/add-student
+PUT {{u}}/classes/add-student/{{classId}}
 Content-Type: application/json
 
 {
-  "studentId": "{{studentId}}",
-  "classId": "{{classId}}"
+  "studentId": "{{studentId}}"
 }
 
 ###

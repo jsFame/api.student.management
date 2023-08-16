@@ -61,22 +61,7 @@ module.exports = {
   post: async (req, res) => {
     // STUDENT AND MENTOR AT THE SAME TIME CASE?
     var matchedUser = await UserModel.findById(req.params.id)
-    let user = new UserModel({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      fullName: req.body.lastName + ' ' + req.body.firstName,
-      date_of_birth: req.body.date_of_birth,
-      gender: req.body.gender,
-      email: req.body.email,
-      role: req.body.role,
-      username: req.body.username,
-      password: req.body.password && sha256(req.body.password),
-    })
-    try {
-      await user.save()
-    } catch (err) {
-      return res.status(201).json({ error: err })
-    }
+
     // ROLE VALIDATION
     if (matchedUser.role !== 'STUDENT') {
       return res.status(201).json({ error: "User's role is not STUDENT" })

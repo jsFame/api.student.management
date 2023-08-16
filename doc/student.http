@@ -1,4 +1,4 @@
-### Create
+### Create a user with role to student - Part 1
 
 POST {{u}}/users
 Content-Type: application/json
@@ -18,13 +18,68 @@ Content-Type: application/json
     res = response.body
     const {user} = res
 
-    client.global.set("studentId", user._id)
-    client.global.set("student", user)
+    client.global.set("studentUserId", user._id)
+    client.global.set("studentUser", user)
 
 
     client.test("res", () => {
-        client.assert(response.status == 200, "student created")
+        client.assert(response.status == 200, "student user created")
     })
 %}
 
+### Create a Student - Part 2
 
+POST http://localhost:1606/students
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "date_of_birth": "1995-05-15",
+  "gender": "M",
+  "email": "john.doe@example.com",
+  "role": "STUDENT",
+  "username": "johndoe",
+  "password": "password",
+  "school": "Example School",
+  "grade": 10,
+  "studentPhone": "1234567890",
+  "parentPhone": "9876543210",
+  "parentName": "Jane Doe",
+  "classId": "<classId>"
+}
+
+### Create Student
+
+POST http://localhost:1606/students/{{studentUserId}}
+Content-Type: application/json
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "{{classId}}"
+}
+
+> {%
+    res = response.body
+    const {newStudent} = res
+
+    client.global.set("studentId", newStudent._id)
+    client.global.set("student", newStudent)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 200, "student  created")
+    })
+%}
+
+### Get
+
+GET {{u}}/students
+
+
+###
