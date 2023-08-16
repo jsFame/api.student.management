@@ -17,4 +17,4 @@
 # Roadmap
 
 1. doc: pending class, record
-2. Fix unhandled promises in cbs
+2. Fix unhandled promises for `DELETE` in cbs
