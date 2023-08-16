@@ -12,7 +12,7 @@ const classSchema = mongoose.Schema({
   },
   subjectName: {
     type: String,
-    enum: ['TOÁN', 'LÝ', 'HÓA', 'VĂN', 'ANH', 'SINH', 'SỬ', 'ĐỊA', 'GDCD'],
+    enum: ['MATH', 'ENGLISH', 'PHYSICS', 'CHEMISTRY', 'BIOLOGY', 'HISTORY'],
   },
   grade: {
     type: Number,
@@ -38,3 +38,4 @@ const classSchema = mongoose.Schema({
 })
 
 module.exports = mongoose.model('Class', classSchema)
+

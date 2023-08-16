@@ -1,3 +1,249 @@
+PUT http://localhost:1606/classes/add-student
+Content-Type: application/json
+Content-Length: 86
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "studentId": "64dca62f15dcd4605cef71dd",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T161205.404.json
+
+###
+
+PUT http://localhost:1606/classes/add-student
+Content-Type: application/json
+Content-Length: 86
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "studentId": "64dca62f15dcd4605cef71dd",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T161201.404.json
+
+###
+
+POST http://localhost:1606/classes
+Content-Type: application/json
+Content-Length: 250
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Math Class",
+  "teacherId": "64dca5a715dcd4605cef71d4",
+  "subjectName": "MATH",
+  "grade": 9,
+  "mentorId": "64dca5c515dcd4605cef71d6",
+  "timetable": {
+    "startTime": "8:00 AM",
+    "endTime": "10:00 AM",
+    "schedule": 5
+  }
+}
+
+<> 2023-08-16T161059.200.json
+
+###
+
+DELETE http://localhost:1606/classes/64dca74d34ca9468a01aecc9
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T161054.200.json
+
+###
+
+DELETE http://localhost:1606/classes/64dca74d34ca9468a01aecc9
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T161052.200.json
+
+###
+
+PUT http://localhost:1606/classes/64dca74d34ca9468a01aecc9
+Content-Type: application/json
+Content-Length: 54
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Revised Math Class",
+  "grade": 10
+}
+
+<> 2023-08-16T160927.200.json
+
+###
+
+PUT http://localhost:1606/classes/64dca74d34ca9468a01aecc9
+Content-Type: application/json
+Content-Length: 54
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Updated Math Class",
+  "grade": 10
+}
+
+<> 2023-08-16T160918.200.json
+
+###
+
+POST http://localhost:1606/classes
+Content-Type: application/json
+Content-Length: 250
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Math Class",
+  "teacherId": "64dca5a715dcd4605cef71d4",
+  "subjectName": "MATH",
+  "grade": 9,
+  "mentorId": "64dca5c515dcd4605cef71d6",
+  "timetable": {
+    "startTime": "8:00 AM",
+    "endTime": "10:00 AM",
+    "schedule": 5
+  }
+}
+
+<> 2023-08-16T160909.200.json
+
+###
+
+POST http://localhost:1606/classes
+Content-Type: application/json
+Content-Length: 250
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Math Class",
+  "teacherId": "64dca5a715dcd4605cef71d4",
+  "subjectName": "Math",
+  "grade": 9,
+  "mentorId": "64dca5c515dcd4605cef71d6",
+  "timetable": {
+    "startTime": "8:00 AM",
+    "endTime": "10:00 AM",
+    "schedule": 5
+  }
+}
+
+<> 2023-08-16T160807.201.json
+
+###
+
+GET http://localhost:1606/classes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T160739.200.json
+
+###
+
+PUT http://localhost:1606/classes/64dca6ce15dcd4605cef71e7
+Content-Type: application/json
+Content-Length: 54
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Updated Math Class",
+  "grade": 10
+}
+
+<> 2023-08-16T160735.200.json
+
+###
+
+GET http://localhost:1606/classes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T160713.200.json
+
+###
+
+POST http://localhost:1606/classes
+Content-Type: application/json
+Content-Length: 251
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Math Class",
+  "teacherId": "64dca5a715dcd4605cef71d4",
+  "subjectName": "TOÁN",
+  "grade": 9,
+  "mentorId": "64dca5c515dcd4605cef71d6",
+  "timetable": {
+    "startTime": "8:00 AM",
+    "endTime": "10:00 AM",
+    "schedule": 5
+  }
+}
+
+<> 2023-08-16T160702.200.json
+
+###
+
+GET http://localhost:1606/classes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T160701.200.json
+
+###
+
+PUT http://localhost:1606/classes/1
+Content-Type: application/json
+Content-Length: 54
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "className": "Updated Math Class",
+  "grade": 10
+}
+
+<> 2023-08-16T160701.404.json
+
+###
+
+GET http://localhost:1606/classes
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T160551.200.json
+
+###
+
 POST http://localhost:1606/users
 Content-Type: application/json
 Content-Length: 195
@@ -701,371 +947,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-08-14T071351.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 195
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Hiro1",
-  "lastName": "H",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "hiro@example.com",
-  "role": "STUDENT",
-  "username": "hiro",
-  "password": "hiro@123"
-}
-
-<> 2023-08-14T071343.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 194
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Hiro",
-  "lastName": "H",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "hiro@example.com",
-  "role": "STUDENT",
-  "username": "hiro",
-  "password": "hiro@123"
-}
-
-<> 2023-08-14T070937.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 217
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Student",
-  "lastName": "User",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "student@example.com",
-  "role": "STUDENT",
-  "username": "studentuser",
-  "password": "studentpassword"
-}
-
-<> 2023-08-14T070910.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 247
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Teacher",
-  "lastName": "User",
-  "fullName": "Teacher User",
-  "date_of_birth": "1990-08-25",
-  "gender": "F",
-  "email": "teacher@example.com",
-  "role": "TEACHER",
-  "username": "teacheruser",
-  "password": "teacherpassword"
-}
-
-<> 2023-08-14T042734.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 247
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Student",
-  "lastName": "User",
-  "fullName": "Student User",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "student@example.com",
-  "role": "STUDENT",
-  "username": "studentuser",
-  "password": "studentpassword"
-}
-
-<> 2023-08-14T042732.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 241
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Mentor",
-  "lastName": "User",
-  "fullName": "Mentor User",
-  "date_of_birth": "1988-02-10",
-  "gender": "M",
-  "email": "mentor@example.com",
-  "role": "MENTOR",
-  "username": "mentoruser",
-  "password": "mentorpassword"
-}
-
-<> 2023-08-14T042729.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 229
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "fullName": "John Doe",
-  "date_of_birth": "1990-01-01",
-  "gender": "M",
-  "email": "john@example.com",
-  "role": "ADMIN",
-  "username": "johndoe",
-  "password": "secretpassword"
-}
-
-<> 2023-08-14T042725.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 241
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Mentor",
-  "lastName": "User",
-  "fullName": "Mentor User",
-  "date_of_birth": "1988-02-10",
-  "gender": "M",
-  "email": "mentor@example.com",
-  "role": "MENTOR",
-  "username": "mentoruser",
-  "password": "mentorpassword"
-}
-
-<> 2023-08-14T042710.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 241
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Mentor",
-  "lastName": "User",
-  "fullName": "Mentor User",
-  "date_of_birth": "1988-02-10",
-  "gender": "M",
-  "email": "mentor@example.com",
-  "role": "MENTOR",
-  "username": "mentoruser",
-  "password": "mentorpassword"
-}
-
-<> 2023-08-14T042519.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 247
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Teacher",
-  "lastName": "User",
-  "fullName": "Teacher User",
-  "date_of_birth": "1990-08-25",
-  "gender": "F",
-  "email": "teacher@example.com",
-  "role": "TEACHER",
-  "username": "teacheruser",
-  "password": "teacherpassword"
-}
-
-<> 2023-08-14T042510.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 247
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Student",
-  "lastName": "User",
-  "fullName": "Student User",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "student@example.com",
-  "role": "STUDENT",
-  "username": "studentuser",
-  "password": "studentpassword"
-}
-
-<> 2023-08-14T042504.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 229
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "fullName": "John Doe",
-  "date_of_birth": "1990-01-01",
-  "gender": "M",
-  "email": "john@example.com",
-  "role": "ADMIN",
-  "username": "johndoe",
-  "password": "secretpassword"
-}
-
-<> 2023-08-14T041817.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 229
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "fullName": "John Doe",
-  "date_of_birth": "1990-01-01",
-  "gender": "M",
-  "email": "john@example.com",
-  "role": "ADMIN",
-  "username": "johndoe",
-  "password": "secretpassword"
-}
-
-<> 2023-08-14T041810.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 229
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "fullName": "John Doe",
-  "date_of_birth": "1990-01-01",
-  "gender": "M",
-  "email": "john@example.com",
-  "role": "ADMIN",
-  "username": "johndoe",
-  "password": "secretpassword"
-}
-
-<> 2023-08-14T041230.200.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 229
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "fullName": "John Doe",
-  "date_of_birth": "1990-01-01",
-  "gender": "M",
-  "email": "john@example.com",
-  "role": "ADMIN",
-  "username": "johndoe",
-  "password": "secretpassword"
-}
-
-<> 2023-08-14T041225.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 228
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "fullName": "John Doe",
-  "date_of_birth": "1990-01-01",
-  "gender": "M",
-  "email": "john@example.com",
-  "role": "user",
-  "username": "johndoe",
-  "password": "secretpassword"
-}
-
-<> 2023-08-14T041101.201.json
 
 ###
 
