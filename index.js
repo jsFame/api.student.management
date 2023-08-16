@@ -5,6 +5,8 @@ const app = express()
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const mongoose = require('mongoose')
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerUI = require('swagger-ui-express');
 
 const port = process.env.PORT ?? 1606
 
@@ -16,6 +18,38 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cookieParser())
 
+// Swagger configuration options
+const swaggerOptions = {
+    swaggerDefinition: {
+        openapi: "3.1.0",
+        info: {
+            title: 'Rest API Swagger Doc',
+            description: 'API Documentation for api.student.management',
+            version: '1.0.0',
+            license: {
+                name: "MIT",
+                url: "https://spdx.org/licenses/MIT.html",
+            },
+            contact: {
+                name: "Hiro",
+                url: "https://github.com/jsFame/api.student.management.git",
+                email: "laciferin@gmail.com",
+            },
+        },
+        servers: [
+            {
+                url: `http://localhost:${port}`,
+                description: 'Development server',
+            },
+        ],
+    },
+    apis: ["./routes/*.js"],
+};
+
+// Swagger documentation setup
+const swaggerSpec = swaggerJSDoc(swaggerOptions);
+app.use('/swagger', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+
 mongoose
   .connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
@@ -23,7 +57,7 @@ mongoose
     useFindAndModify: false,
     useCreateIndex: true,
   })
-  .then(() => {
+    .then(() => {
     console.log('Connected to MongoDB Atlas.')
   })
   .catch((err) => {
@@ -45,6 +79,7 @@ app.use('/teachers', teacherRoute)
 app.use('/mentors', mentorRoute)
 app.use('/attends', attendanceRoute)
 app.use('/records', recordRoute)
+
 
 app.get('*', function (req, res) {
   res.status(404).json({ error: 'Not Found' })

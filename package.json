@@ -29,7 +29,8 @@
     "mongodb": "^3.6.10",
     "mongoose": "^5.13.5",
     "pug": "^3.0.2",
-    "sha256": "^0.2.0"
+    "sha256": "^0.2.0",
+    "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12",
