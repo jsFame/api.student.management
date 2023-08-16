@@ -51,6 +51,18 @@ Content-Type: application/json
     })
 %}
 
-###
+### Update Teacher
 
+PUT http://localhost:1606/teachers/{{teacherId}}
+Content-Type: application/json
+
+{
+  "exp": 10,
+  "subjectName": "HISTORY"
+}
+
+### DELETE
+DELETE http://localhost:1606/teachers/{{teacherId}}
+
+###
 

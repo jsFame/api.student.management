@@ -67,15 +67,13 @@ module.exports = {
   },
   //========================================================= DELETE TEACHER ===================================================//
   delete: async (req, res) => {
-    try {
-      await TeacherModel.findById(req.params.id, null, async (err, teacher) => {
-        if (err || !teacher) throw 'Teacher Not Found'
-        await UserModel.findByIdAndDelete(teacher.userId)
-        teacher.remove()
-      })
-    } catch (err) {
-      res.status(201).json({ error: err })
-    }
-    return res.json({ result: 'deleted successfully' })
-  },
+    await TeacherModel.findByIdAndDelete(req.params.id).then(async (teacher) => {
+      await UserModel.findByIdAndDelete(teacher.userId)
+      await teacher.remove()
+    }).then((result) => {
+      res.json({result: 'deleted successfully'})
+    }).catch((err) => {
+      res.status(201).json({error: "Id not found", err})
+    })
+  }
 }

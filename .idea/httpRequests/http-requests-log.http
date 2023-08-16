@@ -1,3 +1,82 @@
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165738.201.json
+
+###
+
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165726.201.json
+
+###
+
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165707.201.json
+
+###
+
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165703.201.json
+
+###
+
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165420.201.json
+
+###
+
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165133.201.json
+
+###
+
+DELETE http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T165010.200.json
+
+###
+
+PUT http://localhost:1606/teachers/64dcb06cd6471d791f132c4c
+Content-Type: application/json
+Content-Length: 43
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "exp": 10,
+  "subjectName": "HISTORY"
+}
+
+<> 2023-08-16T164909.200.json
+
+###
+
 POST http://localhost:1606/teachers/64dcb040d6471d791f132c46
 Content-Type: application/json
 Content-Length: 39
@@ -838,164 +917,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-08-16T163150.200.json
-
-###
-
-POST http://localhost:1606/students/64dca9279a67f36c6c4824b7
-Content-Type: application/json
-Content-Length: 205
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "school": "Updated School",
-  "grade": 11,
-  "status": "inactive",
-  "studentPhone": "9876543210",
-  "parentPhone": "1234567890",
-  "parentName": "Jane Smith",
-  "classId": "64dca7bb498a416917fba3b1"
-}
-
-<> 2023-08-16T162917.200.json
-
-###
-
-POST http://localhost:1606/students/
-Content-Type: application/json
-Content-Length: 205
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "school": "Updated School",
-  "grade": 11,
-  "status": "inactive",
-  "studentPhone": "9876543210",
-  "parentPhone": "1234567890",
-  "parentName": "Jane Smith",
-  "classId": "64dca7bb498a416917fba3b1"
-}
-
-<> 2023-08-16T162744.201.json
-
-###
-
-POST http://localhost:1606/students/
-Content-Type: application/json
-Content-Length: 205
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "school": "Updated School",
-  "grade": 11,
-  "status": "inactive",
-  "studentPhone": "9876543210",
-  "parentPhone": "1234567890",
-  "parentName": "Jane Smith",
-  "classId": "64dca7bb498a416917fba3b1"
-}
-
-<> 2023-08-16T162611.201.json
-
-###
-
-POST http://localhost:1606/students
-Content-Type: application/json
-Content-Length: 365
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "date_of_birth": "1995-05-15",
-  "gender": "M",
-  "email": "john.doe@example.com",
-  "role": "STUDENT",
-  "username": "johndoe",
-  "password": "password",
-  "school": "Example School",
-  "grade": 10,
-  "studentPhone": "1234567890",
-  "parentPhone": "9876543210",
-  "parentName": "Jane Doe",
-  "classId": "<classId>"
-}
-
-<> 2023-08-16T162230.201.json
-
-###
-
-POST http://localhost:1606/students
-Content-Type: application/json
-Content-Length: 368
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "date_of_birth": "1995-05-15",
-  "gender": "Male",
-  "email": "john.doe@example.com",
-  "role": "STUDENT",
-  "username": "johndoe",
-  "password": "password",
-  "school": "Example School",
-  "grade": 10,
-  "studentPhone": "1234567890",
-  "parentPhone": "9876543210",
-  "parentName": "Jane Doe",
-  "classId": "<classId>"
-}
-
-<> 2023-08-16T162217.201.json
-
-###
-
-GET http://localhost:1606/students
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-16T162147.200.json
-
-###
-
-PUT http://localhost:1606/classes/add-student/64dca7bb498a416917fba3b1
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca9279a67f36c6c4824b7"
-}
-
-<> 2023-08-16T161926.201.json
-
-###
-
-PUT http://localhost:1606/classes/add-student/64dca7bb498a416917fba3b1
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca9279a67f36c6c4824b7"
-}
-
-<> 2023-08-16T161839.201.json
 
 ###
 
