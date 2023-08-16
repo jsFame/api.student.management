@@ -77,9 +77,23 @@ Content-Type: application/json
     })
 %}
 
-### Get
+### Update Student
+PUT {{u}}/students/{{studentId}}
+Content-Type: application/json
 
-GET {{u}}/students
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "{{classId}}"
+}
 
+#### DELETE: Student
+#DELETE http://localhost:1606/students/{{studentId}}
 
 ###
+
+
