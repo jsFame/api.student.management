@@ -11,6 +11,6 @@ GET {{u}}/attendances/{{studentId}}
 
 
 ### TODO: DELETE by attendanceId doc
-#DELETE http://localhost:1606/attendance/:attendanceId
+#DELETE http://{{u}}/attendance/:attendanceId
 
 

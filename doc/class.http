@@ -52,8 +52,13 @@ Content-Type: application/json
   "studentId": "{{studentId}}"
 }
 
-###
-
+#### Remove: Student #FIXME: debug destructive
+#DELETE {{u}}/classes/{{classId}}
+#Content-Type: application/json
+#
+#{
+#  "studentId": "{{studentId}}"
+#}
 
 
 

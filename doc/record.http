@@ -1,0 +1,36 @@
+#TODO: doc
+## Student Record: CREATE
+#POST {{u}}/records
+#Content-Type: application/json
+#
+#{
+#  "grade": "A",
+#  "attendance": "Present"
+#}
+#
+####
+#
+#
+#### GET request to retrieve class detail:
+#GET {{u}}/class/detail/:recordId
+#
+####
+#
+#
+## curl -X PUT -H "Content-Type: application/json" -d '{"grade": "B", "attendance": "Absent"}' {{u}}/class/:studentRecordId/edit
+#PUT {{u}}/class/:studentRecordId/edit
+#Content-Type: application/json
+#
+#{
+#  "grade": "B",
+#  "attendance": "Absent"
+#}
+#
+####
+#
+## curl -X DELETE {{u}}/class/:id/delete
+#DELETE {{u}}/class/:id/delete
+#
+####
+#
+#
