@@ -16,7 +16,7 @@ Content-Type: application/json
 
 > {%
     res = response.body
-    const {user} = res.json()
+    const {user} = res
     client.log(res)
 
     if (res._id)
