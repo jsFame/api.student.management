@@ -61,8 +61,8 @@ Content-Type: application/json
   "subjectName": "HISTORY"
 }
 
-### DELETE
-DELETE http://localhost:1606/teachers/{{teacherId}}
-
-###
+#### DELETE
+#DELETE http://localhost:1606/teachers/{{teacherId}}
+#
+####
 
