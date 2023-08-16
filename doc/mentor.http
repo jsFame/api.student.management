@@ -59,7 +59,12 @@ Content-Type: application/json
   "subjectName": "HISTORY"
 }
 
-###
+#### DELETE
+#DELETE http://localhost:1606/mentors/{{mentorId}}
+#FIXME: server stalling when mentorId not found ; fixit like in teacher
+
+
+
 
 
 
