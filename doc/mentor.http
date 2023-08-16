@@ -1,4 +1,4 @@
-### Create
+### Create User with role of Mentor
 
 POST {{u}}/users
 Content-Type: application/json
@@ -18,6 +18,29 @@ Content-Type: application/json
     res = response.body
     const {user} = res
 
+    client.global.set("mentorUserId", user._id)
+    client.global.set("mentorUser", user)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 200, "mentor user created")
+    })
+%}
+
+### Create Mentor
+
+POST {{u}}/mentors/{{mentorUserId}}
+Content-Type: application/json
+
+{
+  "exp": 5,
+  "subjectName": "MATH"
+}
+
+> {%
+    res = response.body
+    const user = res
+
     client.global.set("mentorId", user._id)
     client.global.set("mentor", user)
 
@@ -26,4 +49,17 @@ Content-Type: application/json
         client.assert(response.status == 200, "mentor created")
     })
 %}
+
+### Update Mentor
+PUT {{u}}/mentors/{{mentorId}}
+Content-Type: application/json
+
+{
+  "exp": 14,
+  "subjectName": "HISTORY"
+}
+
+###
+
+
 

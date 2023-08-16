@@ -1,6 +1,6 @@
 ### Create a Student along with User
 
-POST http://localhost:1606/students
+POST {{u}}/students
 Content-Type: application/json
 
 {
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ### Create Student
 
-POST http://localhost:1606/students/{{studentUserId}}
+POST {{u}}/students/{{studentUserId}}
 Content-Type: application/json
 
 {
@@ -97,7 +97,7 @@ GET {{u}}/students/{{studentId}}/view
 
 
 #### DELETE: Student
-#DELETE http://localhost:1606/students/{{studentId}}
+#DELETE {{u}}/students/{{studentId}}
 
 
 ###

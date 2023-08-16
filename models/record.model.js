@@ -10,7 +10,7 @@ const recordSchema = mongoose.Schema({
   },
   type: {
     type: String,
-    enum: ['VỞ', 'BTVN', 15, 50, 90, 120],
+    enum: ['EXERCISE', 'HOMEWORK', 15, 50, 90, 120],
     required: true,
   },
   date: {

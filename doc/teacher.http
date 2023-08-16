@@ -30,7 +30,7 @@ Content-Type: application/json
 
 ### Add User to Teachers
 
-POST http://localhost:1606/teachers/{{teacherUserId}}
+POST {{u}}/teachers/{{teacherUserId}}
 Content-Type: application/json
 
 {
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ### Update Teacher
 
-PUT http://localhost:1606/teachers/{{teacherId}}
+PUT {{u}}/teachers/{{teacherId}}
 Content-Type: application/json
 
 {
@@ -62,7 +62,7 @@ Content-Type: application/json
 }
 
 #### DELETE
-#DELETE http://localhost:1606/teachers/{{teacherId}}
+#DELETE {{u}}/teachers/{{teacherId}}
 #
 ####
 

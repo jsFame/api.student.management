@@ -6,7 +6,7 @@ const mentorSchema = mongoose.Schema({
   },
   subjectName: {
     type: String,
-    enum: ['TOÁN', 'LÝ', 'HÓA', 'VĂN', 'ANH', 'SINH', 'SỬ', 'ĐỊA', 'GDCD'],
+    enum: ['MATH', 'ENGLISH', 'PHYSICS', 'CHEMISTRY', 'BIOLOGY', 'HISTORY'],
   },
   userId: {
     type: mongoose.Schema.Types.ObjectId,
