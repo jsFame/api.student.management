@@ -15,12 +15,13 @@ Content-Type: application/json
 }
 
 > {%
-    res = response.body.json()
+    res = response.body
+    const {user} = res.json()
     client.log(res)
 
     if (res._id)
-        client.global.set("adminId", res._id)
-    client.global.set("admin", res)
+        client.global.set("adminId", user._id)
+    client.global.set("admin", user)
 
 %}
 

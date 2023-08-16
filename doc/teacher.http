@@ -16,13 +16,15 @@ Content-Type: application/json
 
 > {%
     res = response.body
+    const {user} = res
+    client.log(JSON.stringify(user))
 
-    client.global.set("teacherId", res._id)
-    client.global.set("teacher", res)
+    client.global.set("teacherId", user._id)
+    client.global.set("teacher", user)
 
 
     client.test("res", () => {
-        client.assert(response.status == 201, "teacher created")
+        client.assert(response.status == 200, "teacher created")
     })
 %}
 

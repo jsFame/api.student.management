@@ -16,13 +16,14 @@ Content-Type: application/json
 
 > {%
     res = response.body
+    const {user} = res
 
-    client.global.set("mentorId", res._id)
-    client.global.set("mentor", res)
+    client.global.set("mentorId", user._id)
+    client.global.set("mentor", user)
 
 
     client.test("res", () => {
-        client.assert(response.status == 201, "mentor created")
+        client.assert(response.status == 200, "mentor created")
     })
 %}
 

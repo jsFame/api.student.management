@@ -1,0 +1,34 @@
+### Classes
+GET {{u}}/classes
+
+### New
+POST {{u}}/classes
+Content-Type: application/json
+
+{
+  "className": "Math Class",
+  "teacherId": "{{teacherId}}",
+  "subjectName": "TOÁN",
+  "grade": 9,
+  "mentorId": "{{mentorId}}",
+  "timetable": {
+    "startTime": "8:00 AM",
+    "endTime": "10:00 AM",
+    "schedule": 5
+  }
+}
+
+> {%
+    res = response.body
+
+    client.global.set("classId", res._id)
+    client.global.set("class", res)
+
+
+    client.test("res", () => {
+        client.assert(response.status == 200, "class created")
+    })
+%}
+
+###
+
