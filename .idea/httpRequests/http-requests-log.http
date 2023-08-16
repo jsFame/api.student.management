@@ -1,3 +1,394 @@
+GET http://localhost:1606/students/64dcaf677741ef73064a4795/view
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T164351.200.json
+
+###
+
+PUT http://localhost:1606/students/64dcaf677741ef73064a4795
+Content-Type: application/json
+Content-Length: 208
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "OOEHS, Fujairah,UAE",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164347.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaf037741ef73064a4783
+Content-Type: application/json
+Content-Length: 196
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "OOEHS",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164343.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaf037741ef73064a4783
+Content-Type: application/json
+Content-Length: 198
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "OOEHS-1",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164337.200.json
+
+###
+
+PUT http://localhost:1606/students/64dcaf227741ef73064a4789
+Content-Type: application/json
+Content-Length: 208
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "OOEHS, Fujairah,UAE",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164329.200.json
+
+###
+
+PUT http://localhost:1606/students/64dcaf227741ef73064a4789
+Content-Type: application/json
+Content-Length: 204
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "OOEEH, FUjairah",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164315.200.json
+
+###
+
+PUT http://localhost:1606/students/64dcaf227741ef73064a4789
+Content-Type: application/json
+Content-Length: 203
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164301.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaf037741ef73064a4783
+Content-Type: application/json
+Content-Length: 196
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "OOEHS",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164234.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaf037741ef73064a4783
+Content-Type: application/json
+Content-Length: 205
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164215.200.json
+
+###
+
+POST http://localhost:1606/users
+Content-Type: application/json
+Content-Length: 202
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Hiro",
+  "lastName": "Hamada",
+  "date_of_birth": "2000-03-20",
+  "gender": "F",
+  "email": "hiro@example.com",
+  "role": "STUDENT",
+  "username": "hiro132",
+  "password": "hiro@123"
+}
+
+<> 2023-08-16T164204.200.json
+
+###
+
+POST http://localhost:1606/students
+Content-Type: application/json
+Content-Length: 380
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "date_of_birth": "1995-05-15",
+  "gender": "M",
+  "email": "john.doe@example.com",
+  "role": "STUDENT",
+  "username": "johndoe",
+  "password": "password",
+  "school": "Example School",
+  "grade": 10,
+  "studentPhone": "1234567890",
+  "parentPhone": "9876543210",
+  "parentName": "Jane Doe",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164141.200.json
+
+###
+
+PUT http://localhost:1606/students/64dcaebc7741ef73064a477b
+Content-Type: application/json
+Content-Length: 203
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164057.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaea87741ef73064a4770
+Content-Type: application/json
+Content-Length: 205
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164052.200.json
+
+###
+
+PUT http://localhost:1606/students/64dcaeb17741ef73064a4776
+Content-Type: application/json
+Content-Length: 203
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "active",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164049.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaea87741ef73064a4770
+Content-Type: application/json
+Content-Length: 205
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164042.200.json
+
+###
+
+POST http://localhost:1606/students/64dcaea87741ef73064a4770
+Content-Type: application/json
+Content-Length: 205
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "school": "Updated School",
+  "grade": 11,
+  "status": "inactive",
+  "studentPhone": "9876543210",
+  "parentPhone": "1234567890",
+  "parentName": "Jane Smith",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164036.200.json
+
+###
+
+POST http://localhost:1606/users
+Content-Type: application/json
+Content-Length: 202
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "Hiro",
+  "lastName": "Hamada",
+  "date_of_birth": "2000-03-20",
+  "gender": "F",
+  "email": "hiro@example.com",
+  "role": "STUDENT",
+  "username": "hiro132",
+  "password": "hiro@123"
+}
+
+<> 2023-08-16T164032.200.json
+
+###
+
+POST http://localhost:1606/students/64dcad8b7741ef73064a475a
+Content-Type: application/json
+Content-Length: 380
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "date_of_birth": "1995-05-15",
+  "gender": "M",
+  "email": "john.doe@example.com",
+  "role": "STUDENT",
+  "username": "johndoe",
+  "password": "password",
+  "school": "Example School",
+  "grade": 10,
+  "studentPhone": "1234567890",
+  "parentPhone": "9876543210",
+  "parentName": "Jane Doe",
+  "classId": "64dca7bb498a416917fba3b1"
+}
+
+<> 2023-08-16T164005.200.json
+
+###
+
+GET http://localhost:1606/students/64dcad8b7741ef73064a4760/view
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-16T163706.200.json
+
+###
+
 PUT http://localhost:1606/students/64dcad8b7741ef73064a4760
 Content-Type: application/json
 Content-Length: 203
@@ -596,322 +987,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2023-08-16T161703.200.json
-
-###
-
-PUT http://localhost:1606/classes/add-student/64dca7bb498a416917fba3b1
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca91b9a67f36c6c4824b4"
-}
-
-<> 2023-08-16T161656.201.json
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 202
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Hiro",
-  "lastName": "Hamada",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "hiro@example.com",
-  "role": "STUDENT",
-  "username": "hiro132",
-  "password": "hiro@123"
-}
-
-<> 2023-08-16T161651.200.json
-
-###
-
-PUT http://localhost:1606/classes/add-student/64dca7bb498a416917fba3b1
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca89ebee1156b818476eb"
-}
-
-<> 2023-08-16T161643.201.json
-
-###
-
-PUT http://localhost:1606/classes/add-student/64dca7bb498a416917fba3b1
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca89ebee1156b818476eb"
-}
-
-<> 2023-08-16T161639.201.json
-
-###
-
-PUT http://localhost:1606/classes/add-student/64dca7bb498a416917fba3b1
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca89ebee1156b818476eb",
-}
-
-<> 2023-08-16T161634.400.html
-
-###
-
-POST http://localhost:1606/users
-Content-Type: application/json
-Content-Length: 202
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "Hiro",
-  "lastName": "Hamada",
-  "date_of_birth": "2000-03-20",
-  "gender": "F",
-  "email": "hiro@example.com",
-  "role": "STUDENT",
-  "username": "hiro132",
-  "password": "hiro@123"
-}
-
-<> 2023-08-16T161446.200.json
-
-###
-
-PUT http://localhost:1606/classes/add-student
-Content-Type: application/json
-Content-Length: 86
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca62f15dcd4605cef71dd",
-  "classId": "64dca7bb498a416917fba3b1"
-}
-
-<> 2023-08-16T161205.404.json
-
-###
-
-PUT http://localhost:1606/classes/add-student
-Content-Type: application/json
-Content-Length: 86
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "studentId": "64dca62f15dcd4605cef71dd",
-  "classId": "64dca7bb498a416917fba3b1"
-}
-
-<> 2023-08-16T161201.404.json
-
-###
-
-POST http://localhost:1606/classes
-Content-Type: application/json
-Content-Length: 250
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Math Class",
-  "teacherId": "64dca5a715dcd4605cef71d4",
-  "subjectName": "MATH",
-  "grade": 9,
-  "mentorId": "64dca5c515dcd4605cef71d6",
-  "timetable": {
-    "startTime": "8:00 AM",
-    "endTime": "10:00 AM",
-    "schedule": 5
-  }
-}
-
-<> 2023-08-16T161059.200.json
-
-###
-
-DELETE http://localhost:1606/classes/64dca74d34ca9468a01aecc9
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-16T161054.200.json
-
-###
-
-DELETE http://localhost:1606/classes/64dca74d34ca9468a01aecc9
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-16T161052.200.json
-
-###
-
-PUT http://localhost:1606/classes/64dca74d34ca9468a01aecc9
-Content-Type: application/json
-Content-Length: 54
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Revised Math Class",
-  "grade": 10
-}
-
-<> 2023-08-16T160927.200.json
-
-###
-
-PUT http://localhost:1606/classes/64dca74d34ca9468a01aecc9
-Content-Type: application/json
-Content-Length: 54
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Updated Math Class",
-  "grade": 10
-}
-
-<> 2023-08-16T160918.200.json
-
-###
-
-POST http://localhost:1606/classes
-Content-Type: application/json
-Content-Length: 250
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Math Class",
-  "teacherId": "64dca5a715dcd4605cef71d4",
-  "subjectName": "MATH",
-  "grade": 9,
-  "mentorId": "64dca5c515dcd4605cef71d6",
-  "timetable": {
-    "startTime": "8:00 AM",
-    "endTime": "10:00 AM",
-    "schedule": 5
-  }
-}
-
-<> 2023-08-16T160909.200.json
-
-###
-
-POST http://localhost:1606/classes
-Content-Type: application/json
-Content-Length: 250
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Math Class",
-  "teacherId": "64dca5a715dcd4605cef71d4",
-  "subjectName": "Math",
-  "grade": 9,
-  "mentorId": "64dca5c515dcd4605cef71d6",
-  "timetable": {
-    "startTime": "8:00 AM",
-    "endTime": "10:00 AM",
-    "schedule": 5
-  }
-}
-
-<> 2023-08-16T160807.201.json
-
-###
-
-GET http://localhost:1606/classes
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-16T160739.200.json
-
-###
-
-PUT http://localhost:1606/classes/64dca6ce15dcd4605cef71e7
-Content-Type: application/json
-Content-Length: 54
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Updated Math Class",
-  "grade": 10
-}
-
-<> 2023-08-16T160735.200.json
-
-###
-
-GET http://localhost:1606/classes
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-08-16T160713.200.json
-
-###
-
-POST http://localhost:1606/classes
-Content-Type: application/json
-Content-Length: 251
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "className": "Math Class",
-  "teacherId": "64dca5a715dcd4605cef71d4",
-  "subjectName": "TOÁN",
-  "grade": 9,
-  "mentorId": "64dca5c515dcd4605cef71d6",
-  "timetable": {
-    "startTime": "8:00 AM",
-    "endTime": "10:00 AM",
-    "schedule": 5
-  }
-}
-
-<> 2023-08-16T160702.200.json
 
 ###
 

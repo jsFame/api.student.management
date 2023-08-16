@@ -1,4 +1,26 @@
-### Create a user with role to student - Part 1
+### Create a Student along with User
+
+POST http://localhost:1606/students
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "date_of_birth": "1995-05-15",
+  "gender": "M",
+  "email": "john.doe@example.com",
+  "role": "STUDENT",
+  "username": "johndoe",
+  "password": "password",
+  "school": "Example School",
+  "grade": 10,
+  "studentPhone": "1234567890",
+  "parentPhone": "9876543210",
+  "parentName": "Jane Doe",
+  "classId": "{{classId}}"
+}
+
+### Create a user with role of student - Part 1
 
 POST {{u}}/users
 Content-Type: application/json
@@ -27,27 +49,6 @@ Content-Type: application/json
     })
 %}
 
-### Create a Student - Part 2
-
-POST http://localhost:1606/students
-Content-Type: application/json
-
-{
-  "firstName": "John",
-  "lastName": "Doe",
-  "date_of_birth": "1995-05-15",
-  "gender": "M",
-  "email": "john.doe@example.com",
-  "role": "STUDENT",
-  "username": "johndoe",
-  "password": "password",
-  "school": "Example School",
-  "grade": 10,
-  "studentPhone": "1234567890",
-  "parentPhone": "9876543210",
-  "parentName": "Jane Doe",
-  "classId": "<classId>"
-}
 
 ### Create Student
 
@@ -55,7 +56,7 @@ POST http://localhost:1606/students/{{studentUserId}}
 Content-Type: application/json
 
 {
-  "school": "Updated School",
+  "school": "OOEHS",
   "grade": 11,
   "status": "inactive",
   "studentPhone": "9876543210",
@@ -82,7 +83,7 @@ PUT {{u}}/students/{{studentId}}
 Content-Type: application/json
 
 {
-  "school": "Updated School",
+  "school": "OOEHS, Fujairah,UAE",
   "grade": 11,
   "status": "active",
   "studentPhone": "9876543210",
@@ -91,9 +92,13 @@ Content-Type: application/json
   "classId": "{{classId}}"
 }
 
+### VIEW Student Record
+GET {{u}}/students/{{studentId}}/view
+
+
 #### DELETE: Student
 #DELETE http://localhost:1606/students/{{studentId}}
 
-###
 
+###
 
