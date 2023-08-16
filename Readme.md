@@ -13,3 +13,8 @@
 - `cp .env.example .env`
 - provide the DATABASE_URL and port
 - `npm run dev`
+
+# Roadmap
+
+1. doc: pending class, record
+2. Fix unhandled promises in cbs
